@@ -1,0 +1,30 @@
+.game {
+  background-color: #00a7c4;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+}
+
+.Villager {
+  display: inline-flex;
+  position: fixed;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.player-1 {
+  margin: 3rem;
+}
+
+.player-2 {
+  margin: 3rem;
+}
+
+.result {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .Villager {
+    flex-direction: column;
+  }
+}

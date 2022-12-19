@@ -1,0 +1,88 @@
+  .container {
+    /* margin: auto; */
+    width: 35rem;
+    padding: 40px;
+    text-align: center;
+    background-color: #222;
+    border-radius: 10%;
+    border:3px #888 solid;
+    box-sizing: border-box;
+  } 
+
+   .bglogin { 
+    width: 50px;
+    height: 50px;
+    display: inline-table;
+    /* border: 1px red solid */
+    
+  }
+  
+  .input {
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    background-color: rgba(252, 252, 252, 0.2);
+    width: 350px;
+    border-radius: 3px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 10px 15px;
+    margin: 20px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 300px;
+    border: 1px #888 solid
+  }
+  
+  .btnLogin {
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    color: #0f0c29;
+    border-radius: 10px;
+    width: 350px;
+    font-size: 18px;
+    margin: 20px auto;
+  }
+  
+  .inputPassword {
+    display: inline-block;
+  }
+  
+  .seePassword {
+    position: absolute;
+    margin-left: 12px;
+  }
+
+  .text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 200px;
+    font-size: 16px;
+    line-height: 208.5%;
+    color: rgb(242, 242, 33);
+    align-items: center;
+    margin-bottom : 30px;
+  }
+
+  .btnRegist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #3498db; */
+    background-color: rgb(242, 242, 33);
+    border-radius: 28px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #222;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btnRegist:hover {
+    background-color: white;
+    text-decoration: none;
+  }

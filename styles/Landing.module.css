@@ -1,0 +1,75 @@
+
+.main{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
+  /* background-image: url(/assets/register-bg.jpg); */
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(66deg, rgba(0,0,0,1) 45%, rgba(242,242,33,1) 100%);
+  background: -webkit-linear-gradient(66deg, rgba(0,0,0,1) 45%, rgba(242,242,33,1) 100%);
+  background: linear-gradient(66deg, rgba(0,0,0,1) 45%, rgba(242,242,33,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f2f221",GradientType=1);
+  /* background-size:cover;
+  background-repeat: no-repeat; */
+  box-sizing: border-box;
+}
+
+.content{
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.tittle{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: rgb(242, 242, 33);
+  align-items: center;
+  text-shadow: 3px 3px #6666;
+}
+
+
+.subtittle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  /* line-height: 208.5%; */
+  color: rgb(242, 242, 33);
+  align-items: center;
+  margin-bottom : 20px;
+}
+
+.carousel{
+  width: 500px;
+}
+
+.buttonLogin{
+  background-color: rgb(242, 242, 33);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+}
+.buttonLogin:hover{
+  background-color: black;
+  color: rgb(242, 242, 33);
+  text-decoration: none;
+}
+
+.footer{
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 100%;
+    flex-direction: column;
+  }
+}

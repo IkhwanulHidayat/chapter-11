@@ -1,0 +1,33 @@
+.content {
+  margin: 0px;
+  background:
+linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+background-color:#708090;
+background-size: 64px 128px;
+  background-attachment: fixed;
+}
+
+.buttons {
+  /* justify-content: center;
+  flex-direction: column; */
+  margin-top: 70px;
+  color: rgb(216, 6, 6);
+  margin-left: 50px;
+  flex-direction: column;
+  display: inline-flex;
+}
+
+.content-img {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  height: 55%;
+  width: 30%;
+}
+
+@media (max-width: 800px) {
+  .content-img {
+    width: auto;
+  }
+}

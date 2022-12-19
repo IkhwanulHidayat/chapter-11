@@ -1,0 +1,39 @@
+.mainFooter{
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 89%, rgba(242,242,33,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 89%, rgba(242,242,33,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 89%, rgba(242,242,33,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f2f221",GradientType=1);
+}
+
+.text{
+    font-family: 'Poppins';
+    color: #999;
+}
+
+.footerContent{
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: #999;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footerContent:hover{
+    color: rgb(242, 242, 33);
+    text-decoration: none;
+}
+
+.footerIcon{
+    text-decoration: none;
+    margin: 0 8px;
+    color: #999;
+}
+.footerIcon:hover{
+    color: rgb(242, 242, 33);
+    text-decoration: none;
+}
