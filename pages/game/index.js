@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import Card from "../../src/component/card/card";
 import allvill from "../../src/component/content/allVill";
-import style from "../../styles/Villager.module.css";
+import style from "../../styles/villager.module.css";
 
 export default function Villagers(props) {
   const [allVillagers, updateVill] = useState(allvill);

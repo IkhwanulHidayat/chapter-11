@@ -9,7 +9,7 @@ export default (state = initialState, action) => {
     case GET_PROFILE:
       return {
         ...state,
-        profile: action.data,
+        profile: action.profile,
       }
     default:
       return state

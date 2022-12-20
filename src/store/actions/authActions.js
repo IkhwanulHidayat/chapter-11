@@ -4,10 +4,10 @@ import { toast } from "react-toastify"
 
 export const getProfile = () => async (dispatch) => {
   try {
-    const response = await axios.get('/api/profile')
+    const data = await axios.get('/api/profile')
     dispatch({
       type: GET_PROFILE,
-      data: response.data,
+      profile: data.data,
     })
   } catch (error) {
     console.log(error)
