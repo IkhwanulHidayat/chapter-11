@@ -1,11 +1,10 @@
 import React, { useState,useEffect } from "react";
 import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
 import style from "./content.module.css";
-import game1 from "../../../asset/comp-game.png"
-import game2 from "../../../asset/board-game.png"
-import game3 from "../../../asset/podium.png"
-import game4 from "../../../asset/game-over.png"
+import game1 from "../../../public/assets/comp-game.png"
+import game2 from "../../../public/assets/board-game.png"
+import game3 from "../../../public/assets/podium.png"
+import game4 from "../../../public/assets/game-over.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import Router from "next/router";

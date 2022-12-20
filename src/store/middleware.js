@@ -4,7 +4,7 @@ import { createLogger } from 'redux-logger'
 
 const middleware = []
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NEXT_PUBLIC_NODE === 'development') {
   middleware.push(createLogger())
 }
 

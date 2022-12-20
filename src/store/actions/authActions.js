@@ -14,12 +14,13 @@ export const getProfile = () => async (dispatch) => {
   }
 };
 
-export const doLogin = (body) => async () => {
+export const doLogin = async (body) => {
   try {
     const { data } = await axios.post("/auth/login", body);
     console.log(data)
     localStorage.setItem("_q", data.token);
-    window.location.reload;
+    toast.success("Login success");
+    window.location.replace("/homepage");
   } catch (error) {}
 };
 
@@ -27,6 +28,7 @@ export const doRegister = async (body) => {
   try {
     await axios.post("/auth/register", body)
     toast.success("silahkan login")
+    window.location.replace("/auth/login")
   } catch (error) {
     toast.error(error.message)
   }

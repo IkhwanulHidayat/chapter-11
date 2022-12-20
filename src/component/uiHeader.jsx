@@ -39,7 +39,7 @@ export default function Header() {
           <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
             <Link href='/homepage' style={{textDecoration:'none', color:'black'}}>Wakanda</Link>
           </Typography>
-          <Button color='inherit'>{profile?.name}</Button>
+          <Button color='inherit'>{profile?.username_email}</Button>
         </Toolbar>
       </AppBar>
     </Box>

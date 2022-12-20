@@ -7,6 +7,7 @@ import Router from "next/router";
 // import axios from "../utility/axios";
 import { useDispatch } from 'react-redux';
 import { doRegister } from "../../src/store/actions/authActions";
+import Link from "next/link";
 
 function Register() {
   const [contact, setContact] = useState({
@@ -16,8 +17,6 @@ function Register() {
     password: ""
   });
     const dispatch=useDispatch()
-
-
     
   const [password, setView] = useState(true)
 
@@ -76,7 +75,10 @@ function Register() {
         </div>
         <button className={style.button} onClick={fetchRegister}>Sign me up!</button>
       </div>
-      <h6 className={style.h6}><a href="./login">Login</a> if you have an account!!!</h6>
+      
+      <h6 className={style.h6}><Link href="/auth/login">Login</Link> if you have an account!!!</h6>
+      
+
       {/* <Divider color='gold' /> */}
       {/* <GoogleIcon sx={{ fontSize: 50 }}/ > */}
     </div>

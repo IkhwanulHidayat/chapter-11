@@ -8,9 +8,8 @@ import { redirect } from 'next/dist/server/api-utils';
 import Router from 'next/router';
 import { doLogin } from '../../src/store/actions/authActions';
 import { useDispatch } from 'react-redux';
-import { Password } from '@mui/icons-material';
 import Button from '@mui/material/Button';
-
+import { Container } from '@mui/system';
 
 
 function Login() {
@@ -18,6 +17,8 @@ function Login() {
     username_email: '',
     password: '',
   });
+
+  const [password, setView] = useState(true)
   const dispatch=useDispatch()
 
   const handleChange = (name) => (e) => {
@@ -25,21 +26,31 @@ function Login() {
   };
 
   const fetchLogin = async () => {
-    const data = {
-      username_email: contact.username,
+    try {
+      const data = {
+      username_email: contact.username_email,
       password: contact.password,
-    };
+    } ; 
     await doLogin(data)
+    } catch (error) {
+      console.log(error)
+    }
   };
 
-  const [password, setView] = useState(true)
+  useEffect(() => {
+    document.body.classList.add(styles.regis);
 
+    return function cleanup() {
+      document.body.classList.remove(styles.regis);
+    };
+  }, []);
 
   function showHide() {
     setView((current) => !current)
   };
 
   return (
+    <Container>
     <div className={styles.container}>
       <div className={styles.bglogin}>
         <input
@@ -57,9 +68,8 @@ function Login() {
             type= 'password'
           >
           </input>
+          <Button className={styles.btnLogin} variant="contained" onClick={fetchLogin}>Login</Button>
         </div>
-
-        <Button onClick={fetchLogin}>Login</Button>
 
         <p className={styles.text}>Need an Account?</p>
 
@@ -67,6 +77,7 @@ function Login() {
         <Link href="/auth/register" className={styles.btnRegist} >Register</Link>
       </div>
     </div>
+    </Container>
   )
 }
 export default Login;
