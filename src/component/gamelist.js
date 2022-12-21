@@ -25,6 +25,15 @@ const lists = [
       available: false,
       detail:
         "Primitive game, challenge yourself to become the winner by picking one of three choice!"
+    },
+    {
+      id: 4,
+      name: "Monster Slayer",
+      imgURL:
+        "https://cdn.myanimelist.net/images/anime/10/18793.jpg",
+      available: true,
+      detail:
+        "Kill or be killed!"
     }
   ];
   
